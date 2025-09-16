@@ -1,12 +1,74 @@
-# React + Vite
+# React + Vite + Node.js + Express + MongoDB
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a **full-stack authentication system** built as a task for [Turing Technologies](https://www.linkedin.com/company/turing-technologies/).  
+It includes a responsive **Login & Signup UI (React + Vite)** and a **secure backend (Node.js + Express + MongoDB Atlas)** with JWT authentication.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+-  Responsive **Login & Signup pages** (React + TailwindCSS)
+-  **Protected routes** with `react-router-dom`
+-  **Node.js + Express.js backend**
+-  **MongoDB Atlas** integration with Mongoose
+-  Secure password hashing using **bcrypt**
+-  JWT-based authentication (access + refresh tokens)
+-  Clean folder structure & `.env` config
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+-  **Frontend**: React, Vite, TailwindCSS, React Router DOM
+-  **Backend**: Node.js, Express.js, bcrypt, JWT
+-  **Database**: MongoDB Atlas
+
+---
+
+## 📂 Project Structure
+
+project/
+│── backend/ # Node.js + Express + MongoDB
+│ ├── server.js
+│ ├── models/
+│ ├── routes/
+│ ├── controllers/
+│ └── middleware/
+│
+│── frontend/ # React + Vite + TailwindCSS
+│ ├── src/
+│ │ ├── auth/ (SignIn, Signup)
+│ │ ├── layout/ (DashboardLayout, ChatLayout, Sidebar)
+│ │ └── App.jsx
+│ └── vite.config.js
+
+---
+
+## ⚡ Setup Instructions
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/mobeenn/fullstack-auth-app.git
+cd fullstack-auth-app
+cd frontend
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+➡ Open: http://localhost:5173
+3️⃣ Backend (Node.js + Express)
+cd backend
+
+# Install dependencies
+npm install
+
+# Run server
+npm run dev
+# PORT=5000
+# MONGO_URI=your-mongodb-connection-string
+# JWT_SECRET=your-secret-key
+
+```
